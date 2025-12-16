@@ -25,7 +25,7 @@ jobs:
       run: |
         pyinstaller --onefile app/app.spec
     - name: Upload exe
-      uses: actions/upload-artifact@v2
+      uses: actions/upload-artifact@v4
       with:
         name: Image Tools Windows
-        path: dist/Image Tools.exe
+        path: "dist/Image Tools.exe"
